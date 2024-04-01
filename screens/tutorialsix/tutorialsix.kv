@@ -1,0 +1,21 @@
+<TutorialSix>
+
+    MDFloatLayout:
+        size: self.width, self.height
+        
+        FitImage:
+            source: 'assets/img/farm.jpg'
+            
+        MDBoxLayout:
+            pos_hint: {'center_x': .5, 'center_y': .75}
+            size_hint: None, .4
+            width: self.height
+            md_bg_color: 'white'
+            Image:
+                source: 'assets/img/horse.png'
+                pos_hint: {'center_x': .5, 'center_y': .5}
+                size_hint: .9, .9
+                
+        AsyncImage:
+            source: 'https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/Harry_Potter_and_the_Philosopher%27s_Stone_banner.jpg/330px-Harry_Potter_and_the_Philosopher%27s_Stone_banner.jpg'
+            pos_hint: {'center_x': .5, 'center_y': .3}
